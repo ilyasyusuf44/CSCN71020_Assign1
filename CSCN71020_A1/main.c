@@ -19,13 +19,17 @@ void main() {
 	switch (inputNum)
 	{
 	case 1:
+
 		add();
+		break;
 	case 2:
+
 		subtract();
+		break;
+
 	}
 
 }
-
 void printWelcomeMenu() {
 	printf(" **********************\n");
 	printf("**   Welcome to the   **\n");
@@ -38,7 +42,8 @@ void printOptions() {
 	printf("2. Subtract\n");
 }
 
-void add() {
+void add() 
+{
 	double num1, num2, result;
 	printf("Enter the first value:");
 	scanf_s("%lf", &num1);
@@ -47,6 +52,7 @@ void add() {
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
 }
+
 
 void subtract() {
 	double num1, num2, result;
